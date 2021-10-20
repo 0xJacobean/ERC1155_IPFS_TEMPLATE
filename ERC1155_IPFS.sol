@@ -11,7 +11,7 @@ contract ERC1155Creatable is ERC1155Supply, Ownable {
   using Strings for string;
   using SafeMath for uint256;
 
-  uint256 private _currentTokenID = 0;
+  uint256 public _currentTokenID = 0;
   mapping (uint256 => string) public tokenURIs;
 
   // Contract name
